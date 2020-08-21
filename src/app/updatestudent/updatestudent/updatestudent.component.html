@@ -1,0 +1,45 @@
+
+
+
+  <div class= "managestudent">
+    
+  Enter  Name:<input type="text" [(ngModel)] = "name" class="form-control" >
+  Enter Email:<input type="text" [(ngModel)] = "email" class="form-control"  >
+  Enter DOB:<input type="text" [(ngModel)] = "dob" class="form-control" >
+  Enter Contact No:<input type="text" [(ngModel)] = "c_n" class="form-control" >
+  Enter Class:<input type="text" [(ngModel)] = "class" class="form-control" >
+
+  <button  class="topButton" (click)="updateStudent()">Save</button> &nbsp;
+    <button  (click)="addStudent()" >Add Teacher</button> &nbsp;
+    
+  <table  class="tablestyle" style="border:2px;border-collapse:collapse;width:100%;">
+    <tr>
+          <th style="text-align: center;">Name</th>
+          <th style="text-align: center;">Email</th>
+          <th style="text-align: center;"> DOB</th>
+          <th style="text-align: center;">Contact No.</th>
+          <th style="text-align: center;">Class</th>
+          <th  style="text-align: center;" colspan="2"> Actions</th>
+
+
+   </tr>
+        <tr *ngFor = "let user of userdata ;let i = index;" >
+              
+                <td style="text-align: center;"> {{user.name | uppercase}}</td>
+                <td style="text-align: center;"> {{user.email}}</td>
+                <td style="text-align: center;" > {{user.DOB}}</td>
+                <td style="text-align: center;"> {{user.contact_no|number}}</td>
+                <td style="text-align: center;"> {{user.class}}</td> 
+                <td style="text-align: center;"> <button (click) = "edit(user)"> Edit</button> </td>  
+                <!-- <td> <button (click) = "updateStudent()"> Save</button> </td>   -->
+                <td style="text-align: center;"> <button (click) = "delete(user)"> Delete</button> </td>  
+                <!-- <td> <button (click) = "addStudent()"> Add</button> </td>   -->
+        </tr>
+</table>
+</div>
+  
+
+
+
+
+

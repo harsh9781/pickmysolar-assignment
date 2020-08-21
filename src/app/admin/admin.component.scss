@@ -1,0 +1,149 @@
+.form-content {
+    min-height: 750px;
+}
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form-navbar {
+    background: transparent;
+    border: none;
+    background-color: var(--button-color);
+    background-color: var(--mm-color);
+    height: 60px;
+}
+.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.navbar-default {
+    background: var(--mm-color) !important;
+}
+.content-panel {
+    padding: 60px 20px 40px;
+}
+
+.content-wrapper {
+    margin: 60px 0 40px;
+    background-color:grey;
+    margin: 0px;
+}
+.login-form-inner {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card-bg {
+    background: black;
+    margin-top: 70px;
+
+}
+.login-tit {
+    text-align: center;
+    margin-top: 0;
+    font-size: 28px;
+    color: red !important;
+    margin-bottom: 45px;
+    font-family: Poppins-Bold !important;
+
+}
+.text-left{
+  margin-left: 66px;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    font-weight: 600!important;
+}
+.btn {
+    font-weight: 600 !important;
+    color: black;
+    margin-left: 86px;
+    margin-top: 95px
+}
+.btn1 {
+    font-weight: 600 !important;
+    color: black;
+     margin-left: 307px;
+    margin-top: 95px
+}
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.floated {
+    float:left;
+    margin-right:5px;
+ }
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+@media (min-width: 768px){
+.navbar {
+    border-radius: 4px;
+}
+}
+@media (min-width: 768px){
+.container {
+    width: 750px;
+    }
+}
+@media (min-width: 992px){
+.container {
+width: 970px;
+}
+}
+@media (min-width: 1200px){
+.container {
+ width: 1170px;
+}
+ }
+           
+@media (min-width: 768px){
+.container>.navbar-header{
+margin-right: 0;
+margin-left: 0;
+}
+}
+    
+@media (min-width: 768px){
+.navbar-header {
+float: left;
+}
+}
+@media (max-width: 767px) and (min-width: 480px){
+.login-form-inner {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 9%;
+}
+}
+@media (min-width: 768px){
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -30px;
+        padding-top: 0px;
+    }
+    }
+@media (max-width: 1369px) and (min-width: 1200px){
+.navbar-default {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    height: 60px;
+}
+}
+

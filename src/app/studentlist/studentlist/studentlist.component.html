@@ -1,0 +1,46 @@
+<div class="main-content form-content bg-img content-wrapper">
+    <div class="content-panel">
+        <div class="login-form">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 billing-white-bg no-pad">
+                    <div class="card-bg spacing1 text-center">
+                        <p style="margin:2%;font-weight:700;font-size:20px;">Students Details</p>
+                        <div>
+                              <p style="font-weight:700;font-size:16px; margin-bottom:2%">
+                               Please find all list of students below. </p>
+                        </div>   
+                        <div class="card-white-bg" >
+                            <table style="border:0px;border-collapse:collapse;width:100%;">
+                                <tr>
+                                      <th>Name</th>
+                                      <th>Email</th>
+                                      <th>DOB</th>
+                                      <th>Contact No.</th>
+                                      <th>Class</th>
+                               </tr>
+                                    <tr *ngFor = "let user of userdata">
+                                            <td *ngIf = "user.role == 'student'"> {{user.name | uppercase}}</td>
+                                            <td *ngIf = "user.role == 'student'"> {{user.email}}</td>
+                                            <td *ngIf = "user.role == 'student'"> {{user.DOB}}</td>
+                                            <td *ngIf = "user.role == 'student'"> {{user.contact_no|number}}</td>
+                                            <td *ngIf = "user.role == 'student'"> {{user.class}}</td>   
+                                    </tr>
+                            </table>
+                        </div>
+                        <p style="margin-top:0%;">You can add and delete students details by clicking on below button.
+                            </p>
+                        <p style="font-size:18px;font-weight:700;margin:3%;">You can navigate to any other page</p>
+                        <div class="row">
+                            <a >
+                                <button  (click) ="goToaddStudent()"class="btn" style="font-size:16px;color:white;background:red;font-weight: 600;"><i class="fa fa-home"></i> Manage Student List</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

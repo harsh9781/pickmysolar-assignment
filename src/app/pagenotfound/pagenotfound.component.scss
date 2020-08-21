@@ -1,0 +1,72 @@
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-content {
+    min-height: 750px;
+}
+.navbar-default {
+    background: var(--mm-color) !important;
+}
+.form-header .navbar-brand img {
+    height: 40px;
+    margin-top: 5px;
+    width: 120px;
+}
+.login-form-inner {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card-bg {
+    background: var(--card-color);
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-panel {
+    padding: 60px 20px 40px;
+}
+.login-tit {
+    text-align: center;
+    margin-top: 0;
+    font-size: 28px;
+    color: var(--card-font-color);
+    margin-bottom: 45px;
+    font-family: Poppins-bold !important;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 0px 0px 0px;
+    font-size: 18px;
+    line-height: 20px;
+    width: 135px;
+    margin-left: 0px;
+}
+.form-header .navbar-brand {
+    height: 80px;
+}
+.navbar-brand img {
+    height: 40px;
+    width: 120px;
+    margin-top: 5px;
+}
+.form-header .navbar-brand img {
+    height: 40px;
+    margin-top: 5px;
+    width: 120px;
+    margin-left: 12px;
+}
+
+
+
+
+

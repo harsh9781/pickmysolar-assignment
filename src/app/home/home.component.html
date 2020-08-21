@@ -1,0 +1,29 @@
+<div class="content-wrapper">
+    <div class="content-panel">
+        <div class="login-form">
+            <div class="container subscriptions-container">
+                <div class="" style="display:flex;flex-direction: row;margin-bottom: 56px;">
+                    <h2 class="subscription-header">Login Dashboard</h2>
+                </div>
+                <ul class="subscription-list">
+                    <li class="subscription-card" *ngFor="let user of users">
+                        <a class="card-box">
+                            <div class="card-title">
+                                
+                                {{user.title |uppercase}}
+                            </div>
+                            <p class="card-desc ">{{user.plan_detail}}</p>
+                            <p class="card-desc"></p>
+                            
+                            <button class="btn btn-md subscription-btn" (click)="goToSignIn(user.role)">{{user.role|uppercase}} SIGN IN</button>   
+                        </a>
+                    </li>
+                </ul>
+                <div class="terms-text">
+                    By clicking on any of the above buttons you confirm to the aforementioned recurrent subscription
+                    that you’ve selected untill cancelled, and you agree with our <a class="form-link">Terms of Use</a> & <a class="form-link">Privacy Policy</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

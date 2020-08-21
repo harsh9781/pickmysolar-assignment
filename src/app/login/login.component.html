@@ -1,0 +1,38 @@
+<div class="main-content form-content bg-img">
+    <div class="content-panel content-wrapper">
+        <div class="login-form">
+            <div class="container">
+                <div class="login-form-inner card-bg">
+                    <h3 class="login-tit">{{user|uppercase  }} SIGN IN</h3>
+                    <form [formGroup]="signinForm" name="signinForm" method="post" (ngSubmit)="signin()" novalidate>
+                        <div class="form-group" [ngClass]="{ 'has-error' : signinForm.controls.email.invalid && signinForm.controls.email.pristine }">
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email" formControlName="email" required>
+                            <p *ngIf="signinForm.controls.email.invalid && !signinForm.controls.email.pristine" class="help-block">Email is required.</p>
+                        </div>
+                        <div class="form-group" [ngClass]="{'has-error':signinForm.controls.password.invalid && signinForm.controls.password.pristine}">
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" formControlName="password" required>
+                            <span *ngIf="showPassword" class="fa fa-fw fa-eye field-icon toggle-password" (click)="hidePassword('password')"></span>
+                            <span *ngIf="!showPassword" class="fa fa-fw fa-eye fa-eye-slash field-icon" (click)="hidePassword('password')"></span>
+                            <p *ngIf="signinForm.controls.password.invalid && !signinForm.controls.password.pristine" class="help-block">Password is required.</p>
+                        </div>
+                        <p class="terms-text">By clicking on ‘Sign In’ button, you are hereby agreeing to our&nbsp;<a class="form-link">Privacy
+                                Policy</a>&nbsp;and&nbsp;
+                            <a class="form-link" >Terms &
+                                Conditions.</a>
+                        </p>
+                        <!-- <div *ngIf = "error">
+                            <h5>Please Enter Correct Credentials</h5>
+                        </div> -->
+                       
+                        <div>
+                            <button type="submit" [disabled]="signinForm.invalid" class="btn form-btn" id="sign_in_button">Sign In</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

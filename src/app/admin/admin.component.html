@@ -1,0 +1,25 @@
+<div class="main-content form-content bg-img content-wrapper">
+    <div class="content-panel">
+        <div class="login-form">
+            <div class="container">
+                <div class="login-form-inner card-bg" style="height:400px;max-width:550px;">
+                    <h5 class="login-tit" style="color:var(--button-color);padding-top:50px;font-size:25px;">Welcome
+                        To Admin Dashboard.</h5>
+                    <p class="text-left" style="color:white;font-size:19px;">Welcome {{admin.name}}, You can now add or remove Students/Teachers details.</p>
+
+                            <div class="row">
+                                <a (click)="goToHome()">
+                                    <button (click)= "goToStudent()" class="btn floated "  id="slide_start_button" style="font-size:16px;color:white;background:red;font-weight: 600;"><i class="fa fa-home"></i>Student List</button>
+                                    <button  (click)= "goToTeacher()" class="btn floated"  id="slide_start_button" style="font-size:16px;color:white;background:red;font-weight: 600;"><i class="fa fa-home"></i>Teacher List</button>
+                                </a>
+    
+                            </div> 
+                            <!-- <input type="button" class="floated" id="slide_start_button" value="Start">
+                            <input type="button" class="floated" id="slide_stop_button"  value="Stop">     -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

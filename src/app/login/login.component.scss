@@ -1,0 +1,97 @@
+.card-bg {
+    background: black;
+}
+.content-panel {
+    padding: 60px 20px 40px;
+}
+.content-wrapper {
+    margin: 60px 0 40px;
+    // background-color: rgba(128, 128, 128, 0.863);
+    background-color:grey;
+    margin: 0px;
+}
+
+.login-form-inner {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+}
+.login-form .form-control {
+    height: 45px;
+    border-radius: 2px;
+    box-shadow: none;
+    // color: var(--bg-font-color);
+    color: white;
+    background-color: var(--bg-color) !important;
+    background-image: none;
+    border: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.content-panel {
+    padding: 60px 20px 40px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-tit {
+    text-align: center;
+    margin-top: 0;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 45px;
+    font-family: Poppins-Bold !important;
+}
+.form-btn {
+   // background: var(--button-color)!important;
+   background:red;
+    color: var(--button-font-color)!important;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    height: 45px;
+    margin: 16px 0 0;
+    text-transform: uppercase;
+    transition: transform 1s;
+    outline: 0!important;
+    font-weight: 600;
+    // outline:none !important;
+    // border: none !important; 
+ }
+  .btn {
+   // background : var(--button-color) !important;
+    //color      : var(--button-font-color) !important;
+    font-weight: 600 !important;
+    color:white;
+    //background: red
+    outline:none !important;
+    border: none !important;}
+
+.has-error .help-block {
+    padding: 0 5px;
+    font-size: 14px;
+    color: red;
+  }
+  .help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+.terms-text {
+    margin: 16px 0 0;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color:white;
+    font-family: Poppins-Bold;
+}

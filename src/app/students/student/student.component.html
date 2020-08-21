@@ -1,0 +1,71 @@
+<div class="main-content content-wrapper">
+    <div class="content-panel">
+        <div class="login-form">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 billing-white-bg no-pad">
+                    <div class="card-bg spacing1 text-center">
+
+                         <div >
+                                <img src="assets/img/success.png" alt="Monarch Channel" width="50"
+                               
+                                   style="border: 0; font-size: 0; margin: 0; max-width: 100%; padding: 0;">
+                        </div> 
+                        <p style="margin:2%;font-weight:700;font-size:20px;">Students Details</p>
+
+                        <div>
+                              <p style="font-weight:700;font-size:16px; margin-bottom:2%">
+                               Please find you details below </p>
+                        </div>   
+                               
+                        
+                        <div class="card-white-bg" >
+                            <table style="border:0px;border-collapse:collapse;width:100%;">
+                                <tbody>
+                                    <tr>
+                                        <td>Student Name</td>
+                                        <td>{{students.name}}</td>
+                                    </tr>
+                                    <tr >
+                                        <td>Email Id</td>
+                                        <td>{{students.email}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Password</td>
+                                        <td>{{students.password}}</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>DOB</td>
+                                        <td>{{students.DOB}}</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Contact No.</td>
+                                        <td>{{students.contact_no}}</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>Class</td>
+                                        <td>{{students.class}}</td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="margin-top:4%;">You would recieve an e-mail with the above information , please check
+                            your Inbox/Spam box</p>
+                        <p style="font-size:18px;font-weight:700;margin:3%;">You cannot navigate to any other page</p>
+                        <div class="row">
+                            <a (click)="goToHome()">
+                                <button class="btn" style="font-size:16px;color:white;background:red;font-weight: 600;"><i class="fa fa-home"></i> Home</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
