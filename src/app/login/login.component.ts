@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup,ReactiveFormsModule , Validators,FormsModule } f
 import { Router, RouterModule,ActivatedRoute } from '@angular/router';
 import { InvokeFunctionExpr } from '@angular/compiler';
 import {UserdetailsService} from '../../app/core/services/userdetails.service'
-
+import { MatDialog } from '@angular/material/dialog';
+import{UpdatedialogComponent} from '../../app/updatestudent/dialog/updatedialog/updatedialog.component'
 
 
 @Component({
@@ -18,7 +19,7 @@ export class LoginComponent implements OnInit {
   error: boolean = true;
   
 
-  constructor(private route:ActivatedRoute,private router: Router,private formBuilder: FormBuilder,private userdetailsService:UserdetailsService) { }
+  constructor(public dialog: MatDialog,private route:ActivatedRoute,private router: Router,private formBuilder: FormBuilder,private userdetailsService:UserdetailsService) { }
 
   signinForm: FormGroup;
   showPassword: boolean = false;
@@ -66,8 +67,17 @@ export class LoginComponent implements OnInit {
         })
        console.log(this.error);
         if(this.error){
-          alert("Please Enter Correct Credentials");
-          // this.error = false;
+          const dialogRef = this.dialog.open(UpdatedialogComponent,{
+            width: "400px",
+            data: "credentials"
+          });
+          dialogRef.afterClosed().subscribe(result => {
+            console.log(result);
+            if (result.data == 'Yes') {
+              
+            }
+            });
+          
           return;
         } else if(!this.error){
           this.error=true;
